@@ -5,10 +5,8 @@ import random
 from string import ascii_lowercase as al
 
 if __name__ == "__main__":
-    start, end = input(
-        "Введите диапозон целых или вещественных чисел, или символов.\n"
-        "Примеры: -30 - -10 или 1.05 - 5.3 или a - f.\nВвод: "
-    ).split(" - ")
+    print("\nВведите диапозон целых или вещественных чисел, или символов.")
+    start, end = input("От: "), input("До: ")
 
     try:
         rand_num = random.randint(int(start), int(end))
